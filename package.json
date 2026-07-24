@@ -3,9 +3,9 @@
     "version": "1.0.0",
     "main": "src/main.ts",
     "scripts": {
-        "start": "ts-node src/main.ts",
+        "start": "node dist/main.js",
         "dev": "nodemon src/main.ts",
-        "build": "tsc",
+        "build": "tsc --skipLibCheck",
         "lint": "prettier --write \"src/**/*.ts\""
     },
     "engines": {
@@ -23,7 +23,7 @@
     },
     "homepage": "https://github.com/consumet/consumet.ts#readme",
     "dependencies": {
-        "@consumet/extensions": "github:consumet/consumet.ts",
+        "@consumet/extensions": "git+https://github.com/consumet/consumet.ts.git",,
         "@fastify/cors": "^8.5.0",
         "@types/node": "^18.11.17",
         "@types/ws": "^8.5.3",
